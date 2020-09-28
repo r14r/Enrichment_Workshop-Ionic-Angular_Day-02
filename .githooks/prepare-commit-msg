@@ -45,4 +45,4 @@ LOG "Checking whitespace errors against: $against"
 # exec git diff-index --check --cached $against --
 
 # Check only specific file extensions
-#git diff-index --check --text HEAD '*.ts' '*.html' '*.json' '*.xml'
+# git diff-index --check --text HEAD '*.ts' '*.html' '*.json' '*.xml'
