@@ -1,10 +1,6 @@
 **/.env.d
+**/.env
 
-.env/
-
-**/.DS_Store
-
-node_nodules
 **/node_modules
 
-Github*/*
+**/.DS_Store
