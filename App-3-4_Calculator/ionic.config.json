@@ -1,0 +1,7 @@
+{
+  "name": "App-2-4_Calculator_2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

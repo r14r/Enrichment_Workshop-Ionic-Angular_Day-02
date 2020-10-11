@@ -1,5 +1,7 @@
 {
-  "name": "app-workshop",
-  "integrations": {},
+  "name": "App-2-2_Custom-Components",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
