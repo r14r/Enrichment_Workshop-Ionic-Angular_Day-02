@@ -1,5 +1,7 @@
 {
-  "name": "App-2-1_Ionic-Components",
-  "integrations": {},
+  "name": "App-2-1_Ionic5-Components",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

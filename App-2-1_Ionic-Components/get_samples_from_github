@@ -1,0 +1,19 @@
+#!/bin/bash
+
+ROOT="$PWD"
+DEST="src/app/pages"
+
+git clone --depth 1 https://github.com/ionic-team/ionic-framework tmp
+
+(
+    find tmp/core/src/components -name angular.md | while read FILE
+    do 
+        TEMP="${FILE##tmp/core/src/components/}"
+        FLDR="${TEMP%%/*}"
+
+        mkdir -p $DEST/$FLDR && cp $FILE $DEST/$FLDR
+    done
+)
+
+
+rm -rf tmp

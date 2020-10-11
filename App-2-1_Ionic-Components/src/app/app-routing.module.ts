@@ -4,289 +4,284 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
 	{ path: '', redirectTo: 'home', pathMatch: 'full' },
 	{
-		path: 'home',
-		loadChildren: () =>
-			import('./home/home.module').then(m => m.HomePageModule)
-	},
-	{
-		path: 'list',
-		loadChildren: () =>
-			import('./list/list.module').then(m => m.ListPageModule)
-	},
-	{
 		path: 'alert',
 		loadChildren: () =>
-			import('./pages/alert/alert.module').then(m => m.AlertPageModule)
+			import('./pages/alert/alert.module').then((m) => m.AlertPageModule),
 	},
 	{
 		path: 'action-sheet',
 		loadChildren: () =>
 			import('./pages/action-sheet/action-sheet.module').then(
-				m => m.ActionSheetPageModule
-			)
+				(m) => m.ActionSheetPageModule
+			),
 	},
 	{
 		path: 'alert',
 		loadChildren: () =>
-			import('./pages/alert/alert.module').then(m => m.AlertPageModule)
+			import('./pages/alert/alert.module').then((m) => m.AlertPageModule),
 	},
 	{
 		path: 'avatar',
 		loadChildren: () =>
-			import('./pages/avatar/avatar.module').then(m => m.AvatarPageModule)
+			import('./pages/avatar/avatar.module').then(
+				(m) => m.AvatarPageModule
+			),
 	},
 	{
 		path: 'back-button',
 		loadChildren: () =>
 			import('./pages/back-button/back-button.module').then(
-				m => m.BackButtonPageModule
-			)
+				(m) => m.BackButtonPageModule
+			),
 	},
 	{
 		path: 'backdrop',
 		loadChildren: () =>
-			import('./pages/backdrop/backdrop.module').then(
-				m => m.BackdropPageModule
-			)
+			import('./pages/backdrop/module').then((m) => m.BackdropPageModule),
 	},
 	{
 		path: 'badge',
 		loadChildren: () =>
-			import('./pages/badge/badge.module').then(m => m.BadgePageModule)
+			import('./pages/badge/badge.module').then((m) => m.BadgePageModule),
 	},
 	{
 		path: 'button',
 		loadChildren: () =>
-			import('./pages/button/button.module').then(m => m.ButtonPageModule)
+			import('./pages/button/button.module').then(
+				(m) => m.ButtonPageModule
+			),
 	},
 	{
 		path: 'card',
 		loadChildren: () =>
-			import('./pages/card/card.module').then(m => m.CardPageModule)
+			import('./pages/card/card.module').then((m) => m.CardPageModule),
 	},
 	{
 		path: 'checkbox',
 		loadChildren: () =>
 			import('./pages/checkbox/checkbox.module').then(
-				m => m.CheckboxPageModule
-			)
+				(m) => m.CheckboxPageModule
+			),
 	},
 	{
 		path: 'chip',
 		loadChildren: () =>
-			import('./pages/chip/chip.module').then(m => m.ChipPageModule)
+			import('./pages/chip/chip.module').then((m) => m.ChipPageModule),
 	},
 	{
 		path: 'content',
 		loadChildren: () =>
 			import('./pages/content/content.module').then(
-				m => m.ContentPageModule
-			)
+				(m) => m.ContentPageModule
+			),
 	},
 	{
 		path: 'datetime',
 		loadChildren: () =>
 			import('./pages/datetime/datetime.module').then(
-				m => m.DatetimePageModule
-			)
+				(m) => m.DatetimePageModule
+			),
 	},
 	{
 		path: 'fab',
 		loadChildren: () =>
-			import('./pages/fab/fab.module').then(m => m.FabPageModule)
+			import('./pages/fab/fab.module').then((m) => m.FabPageModule),
 	},
 	{
 		path: 'grid',
 		loadChildren: () =>
-			import('./pages/grid/grid.module').then(m => m.GridPageModule)
+			import('./pages/grid/grid.module').then((m) => m.GridPageModule),
 	},
 	{
 		path: 'icon',
 		loadChildren: () =>
-			import('./pages/icon/icon.module').then(m => m.IconPageModule)
+			import('./pages/icon/icon.module').then((m) => m.IconPageModule),
 	},
 	{
 		path: 'infinite-scroll',
 		loadChildren: () =>
 			import('./pages/infinite-scroll/infinite-scroll.module').then(
-				m => m.InfiniteScrollPageModule
-			)
+				(m) => m.InfiniteScrollPageModule
+			),
 	},
 	{
 		path: 'input',
 		loadChildren: () =>
-			import('./pages/input/input.module').then(m => m.InputPageModule)
+			import('./pages/input/input.module').then((m) => m.InputPageModule),
 	},
 	{
 		path: 'item',
 		loadChildren: () =>
-			import('./pages/item/item.module').then(m => m.ItemPageModule)
+			import('./pages/item/item.module').then((m) => m.ItemPageModule),
 	},
 	{
 		path: 'list',
 		loadChildren: () =>
-			import('./pages/list/list.module').then(m => m.ListPageModule)
+			import('./pages/list/list.module').then((m) => m.ListPageModule),
 	},
 	{
 		path: 'loading',
 		loadChildren: () =>
 			import('./pages/loading/loading.module').then(
-				m => m.LoadingPageModule
-			)
+				(m) => m.LoadingPageModule
+			),
 	},
 	{
 		path: 'menu',
 		loadChildren: () =>
-			import('./pages/menu/menu.module').then(m => m.MenuPageModule)
+			import('./pages/menu/menu.module').then((m) => m.MenuPageModule),
 	},
 	{
 		path: 'modal',
 		loadChildren: () =>
-			import('./pages/modal/modal.module').then(m => m.ModalPageModule)
+			import('./pages/modal/modal.module').then((m) => m.ModalPageModule),
 	},
 	{
 		path: 'nav',
 		loadChildren: () =>
-			import('./pages/nav/nav.module').then(m => m.NavPageModule)
+			import('./pages/nav/nav.module').then((m) => m.NavPageModule),
 	},
 	{
 		path: 'note',
 		loadChildren: () =>
-			import('./pages/note/note.module').then(m => m.NotePageModule)
+			import('./pages/note/note.module').then((m) => m.NotePageModule),
 	},
 	{
 		path: 'picker',
 		loadChildren: () =>
-			import('./pages/picker/picker.module').then(m => m.PickerPageModule)
+			import('./pages/picker/picker.module').then(
+				(m) => m.PickerPageModule
+			),
 	},
 	{
 		path: 'popover',
 		loadChildren: () =>
 			import('./pages/popover/popover.module').then(
-				m => m.PopoverPageModule
-			)
+				(m) => m.PopoverPageModule
+			),
 	},
 	{
 		path: 'progress-bar',
 		loadChildren: () =>
 			import('./pages/progress-bar/progress-bar.module').then(
-				m => m.ProgressBarPageModule
-			)
+				(m) => m.ProgressBarPageModule
+			),
 	},
 	{
 		path: 'radio',
 		loadChildren: () =>
-			import('./pages/radio/radio.module').then(m => m.RadioPageModule)
+			import('./pages/radio/radio.module').then((m) => m.RadioPageModule),
 	},
 	{
 		path: 'range',
 		loadChildren: () =>
-			import('./pages/range/range.module').then(m => m.RangePageModule)
+			import('./pages/range/range.module').then((m) => m.RangePageModule),
 	},
 	{
 		path: 'refresher',
 		loadChildren: () =>
 			import('./pages/refresher/refresher.module').then(
-				m => m.RefresherPageModule
-			)
+				(m) => m.RefresherPageModule
+			),
 	},
 	{
 		path: 'reorder',
 		loadChildren: () =>
 			import('./pages/reorder/reorder.module').then(
-				m => m.ReorderPageModule
-			)
+				(m) => m.ReorderPageModule
+			),
 	},
 	{
 		path: 'router-link',
 		loadChildren: () =>
 			import('./pages/router-link/router-link.module').then(
-				m => m.RouterLinkPageModule
-			)
+				(m) => m.RouterLinkPageModule
+			),
 	},
 	{
 		path: 'searchbar',
 		loadChildren: () =>
 			import('./pages/searchbar/searchbar.module').then(
-				m => m.SearchbarPageModule
-			)
+				(m) => m.SearchbarPageModule
+			),
 	},
 	{
 		path: 'segment',
 		loadChildren: () =>
 			import('./pages/segment/segment.module').then(
-				m => m.SegmentPageModule
-			)
+				(m) => m.SegmentPageModule
+			),
 	},
 	{
 		path: 'select',
 		loadChildren: () =>
-			import('./pages/select/select.module').then(m => m.SelectPageModule)
+			import('./pages/select/select.module').then(
+				(m) => m.SelectPageModule
+			),
 	},
 	{
 		path: 'skeleton-text',
 		loadChildren: () =>
 			import('./pages/skeleton-text/skeleton-text.module').then(
-				m => m.SkeletonTextPageModule
-			)
+				(m) => m.SkeletonTextPageModule
+			),
 	},
 	{
 		path: 'slides',
 		loadChildren: () =>
-			import('./pages/slides/slides.module').then(m => m.SlidesPageModule)
+			import('./pages/slides/slides.module').then(
+				(m) => m.SlidesPageModule
+			),
 	},
 	{
 		path: 'spinner',
 		loadChildren: () =>
 			import('./pages/spinner/spinner.module').then(
-				m => m.SpinnerPageModule
-			)
+				(m) => m.SpinnerPageModule
+			),
 	},
 	{
 		path: 'tabs',
 		loadChildren: () =>
-			import('./pages/tabs/tabs.module').then(m => m.TabsPageModule)
+			import('./pages/tabs/tabs.module').then((m) => m.TabsPageModule),
 	},
 	{
 		path: 'text',
 		loadChildren: () =>
-			import('./pages/text/text.module').then(m => m.TextPageModule)
+			import('./pages/text/text.module').then((m) => m.TextPageModule),
 	},
 	{
 		path: 'thumbnail',
 		loadChildren: () =>
 			import('./pages/thumbnail/thumbnail.module').then(
-				m => m.ThumbnailPageModule
-			)
+				(m) => m.ThumbnailPageModule
+			),
 	},
 	{
 		path: 'toast',
 		loadChildren: () =>
-			import('./pages/toast/toast.module').then(m => m.ToastPageModule)
+			import('./pages/toast/toast.module').then((m) => m.ToastPageModule),
 	},
 	{
 		path: 'toggle',
 		loadChildren: () =>
-			import('./pages/toggle/toggle.module').then(m => m.TogglePageModule)
+			import('./pages/toggle/toggle.module').then(
+				(m) => m.TogglePageModule
+			),
 	},
 	{
 		path: 'toolbar',
 		loadChildren: () =>
 			import('./pages/toolbar/toolbar.module').then(
-				m => m.ToolbarPageModule
-			)
-	}
+				(m) => m.ToolbarPageModule
+			),
+	},
 ];
 
 @NgModule({
 	imports: [
-		RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+		RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
 	],
-	exports: [RouterModule]
+	exports: [RouterModule],
 })
-export class AppRoutingModule {
-	PREFIX = this.constructor.name;
-	log(func, line = '') {
-		console.log(this.PREFIX + '::' + func + '| ' + line);
-	}
-}
+export class AppRoutingModule {}
